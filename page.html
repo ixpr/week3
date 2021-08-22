@@ -11,7 +11,7 @@
     <button id="bt" onclick="fetchUrl();">FETCH</button>
     <script>
         function fetchUrl() {
-            let url = window.location.href;
+            let url = document.getElementById("inp").value;
             fetch(url)
             .then(response => response.text())
             .then(response =>{
